@@ -33,6 +33,17 @@
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; margin-top: 28px; }
+    .delete-card {
+      background: linear-gradient(180deg, rgba(122,92,255,0.05), rgba(122,92,255,0.02));
+      border: 1px solid rgba(122,92,255,0.25); border-radius: 18px; padding: 22px 20px; margin-top: 28px;
+    }
+    .delete-card h2 { margin-top: 4px; }
+    .delete-btn {
+      display: inline-block; margin-top: 8px; background: var(--accent); color: var(--surface);
+      border: 0; border-radius: 12px; padding: 12px 16px; font-weight: 700; text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .delete-btn:hover { opacity: 0.92; text-decoration: none; }
     footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; }
   </style>
 </head>
@@ -100,6 +111,14 @@
     <h2>11. Termination</h2>
     <p>You may stop using the app at any time and delete your data from Settings. We may suspend or
       end access if you violate these Terms.</p>
+
+    <div class="delete-card">
+      <p class="muted" style="margin:0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; font-weight: 700;">Data deletion</p>
+      <h2 style="margin-top: 8px;">Delete your Reflex Learn data</h2>
+      <p>To delete your Reflex Learn data, open the app → <strong>Settings</strong> → <strong>Delete my data</strong>.</p>
+      <p>This removes your progress, recordings history, and saved phrasings. If any data is retained, it is only the minimum needed for security, fraud prevention, or legal compliance, and it is deleted within 30 days.</p>
+      <a class="delete-btn" href="mailto:tareeqcodes@gmail.com?subject=Delete%20my%20Reflex%20Learn%20data">Delete my data</a>
+    </div>
 
     <h2>12. Changes to these Terms</h2>
     <p>We may update these Terms; material changes will be reflected by the “Last updated” date.
